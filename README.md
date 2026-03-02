@@ -1,6 +1,6 @@
 # contextimo
 ### Overview
-This is a quick and simple way to add some marimo-related options to the Windows context menu. Unfortunately the [underlying python library](https://github.com/saleguas/context_menu) only partially supports Linux, and has no support for Mac.
+This is a quick and simple way to add some [marimo](https://github.com/marimo-team/marimo)-related options to the Windows context menu. Unfortunately the [underlying python library](https://github.com/saleguas/context_menu) only partially supports Linux, and has no support for Mac.
 ### Installation
 To create the context menus, use `python contextimo.py add`, or `uv run contextimo.py add`. The added menus can also be removed with `python contextimo.py remove` (or using `uv`, as before).
 ### Usage
