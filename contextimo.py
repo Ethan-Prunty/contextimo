@@ -1,5 +1,6 @@
 # for getting the absolute path to the marimo icon
 import os.path
+import sys
 
 from context_menu import menus
 from context_menu.menus import ContextMenu
@@ -51,5 +52,9 @@ def remove_commands():
     menus.removeMenu("Marimo", type="DIRECTORY_BACKGROUND")
 
 
-add_commands()
-# remove_commands()
+if sys.argv[1] == "add":
+    add_commands()
+elif sys.argv[1] == "remove":
+    remove_commands()
+else:
+    pass
