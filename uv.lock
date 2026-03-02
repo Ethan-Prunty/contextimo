@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "context-menu"
+version = "1.4.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ad/be/276959c4ece0e906ecee0387745dbae7989e09b27c41051046751c4b7775/context_menu-1.4.1.tar.gz", hash = "sha256:47d49c46a9638ab46090787019cdba5e8285862f1487da702a70ffdd82280f6b", size = 22479, upload-time = "2024-04-12T19:36:32.045Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7d/a4/f928745222809d97b40282cc09b9408e06f42df379aebd10912cec80c3a0/context_menu-1.4.1-py3-none-any.whl", hash = "sha256:478a1b104b105260ea3deb53c1473b277fe11af4ac6cbcfd9d64abfb6cc94daa", size = 17893, upload-time = "2024-04-12T19:36:30.612Z" },
+]
+
+[[package]]
+name = "marimocontext"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "context-menu" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "context-menu", specifier = ">=1.4.1" }]
