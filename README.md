@@ -1,8 +1,8 @@
 # contextimo
 ### Overview
-This is a quick quick and simple way to add some marimo-related options to the Windows context menu. Unfortunately the [underlying python library](https://github.com/saleguas/context_menu) only partially supports Linux, and has no support for Mac.
+This is a quick and simple way to add some marimo-related options to the Windows context menu. Unfortunately the [underlying python library](https://github.com/saleguas/context_menu) only partially supports Linux, and has no support for Mac.
 ### Installation
-To create the context menus, use `python contextimo.py add`, or `uv run contextimo.py add`. The added menus can be removed with `python contextimo.py remove` (or using `uv`, as before).
+To create the context menus, use `python contextimo.py add`, or `uv run contextimo.py add`. The added menus can also be removed with `python contextimo.py remove` (or using `uv`, as before).
 ### Usage
 At present, contextimo adds two menus: one which appears in the context menu when the desktop or a directory background is selected, and one which appear when python files are selected. The first of gives the option to either create a new notebook (using `marimo new`) or open the marimo hub (`marimo edit`). The python-specific menu has three options: `edit`, `edit in a sandbox` (requires `uv`), and `run`.
 
