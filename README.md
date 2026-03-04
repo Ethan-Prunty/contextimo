@@ -1,4 +1,7 @@
 # contextimo
+
+![general context](general.png) 
+![python files](python_files.png)
 ### Overview
 This is a quick and simple way to add some marimo-related options to the Windows context menu. Unfortunately the [underlying python library](https://github.com/saleguas/context_menu) only partially supports Linux, and has no support for Mac.
 ### Installation

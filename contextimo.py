@@ -10,7 +10,7 @@ from context_menu.menus import ContextMenu
 def add_commands():
     # commands which appear in the context menu for .py files
     python_menu = ContextMenu(
-        "Marimo", type=".py", icon_path=os.path.abspath("marimo_icon.ico")
+        "marimo", type=".py", icon_path=os.path.abspath("marimo_icon.ico")
     )
 
     edit_with_marimo = menus.ContextCommand(
@@ -32,7 +32,7 @@ def add_commands():
 
     # commands which appear when in a folder or the desktop
     general_menu = ContextMenu(
-        "Marimo",
+        "marimo",
         type="DIRECTORY_BACKGROUND",
         icon_path=os.path.abspath("marimo_icon.ico"),
     )
@@ -48,8 +48,8 @@ def add_commands():
 
 # removes all the created menus
 def remove_commands():
-    menus.removeMenu("Marimo", type=".py")
-    menus.removeMenu("Marimo", type="DIRECTORY_BACKGROUND")
+    menus.removeMenu("marimo", type=".py")
+    menus.removeMenu("marimo", type="DIRECTORY_BACKGROUND")
 
 
 if sys.argv[1] == "add":
